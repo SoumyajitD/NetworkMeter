@@ -1,4 +1,5 @@
 from tkinter import *
+from typing import Sized
 import pyspeedtest
 from PIL import ImageTk, Image
 import tkinter.messagebox as tmsg
@@ -48,9 +49,11 @@ navText.pack()
 # city=Entry(fside,textvariable=city).pack()
 
 
-pane = Frame(root,pady=50,borderwidth=2,bg="white")
+pane = Frame(root,pady=20,borderwidth=2,bg="white")
 pane.pack(side=BOTTOM,fill = X)
  
+fb=Frame(pane)
+fb.pack(side=BOTTOM,fill=X) 
 
 pingB= Button(pane, text = "PING",background = "red", fg = "white",font="Calibri 14 bold",command=ping)
 pingB.pack(side = LEFT, expand = True, fill = X)
@@ -61,6 +64,7 @@ downB.pack(side=LEFT, expand = True, fill = X)
  
 upB = Button(pane, text = "UPLOAD SPEED", background = "green", fg = "white",font="Calibri 14 bold", command=up)
 upB.pack(side = LEFT, expand = True, fill = X)
+
 
 
 
