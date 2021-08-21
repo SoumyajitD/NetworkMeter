@@ -3,7 +3,7 @@
 
 ## About
 
-<img src="screenshot.png">
+<img src="assets/1.2.png">
 A python tkinter based gui application to test your network. 
 
 You can test:
